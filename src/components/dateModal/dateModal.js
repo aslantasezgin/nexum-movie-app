@@ -29,7 +29,6 @@ const DateModal = (props) => {
    setCurrentWeek(format(firstDayNextWeek, 'dd-MM'))
    }
    
-   console.log(newDays)
 
    const previousWeek = () => {
     let firstDayNextWeek =  add(firstDayCurrentWeek, {days: -7})
