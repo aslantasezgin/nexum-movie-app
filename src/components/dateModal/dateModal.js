@@ -14,8 +14,8 @@ const DateModal = (props) => {
     const movie = props.item
     const {watchList} = useSelector((state) => state.watchList)
     const dispatch = useDispatch()
-
     let today = startOfToday()
+
     let [selectedDay, setSelectedDay] = useState(today)
     let [currentWeek, setCurrentWeek] = useState(format(today, 'dd-MM'))
     let firstDayCurrentWeek = parse(currentWeek, 'dd-MM', new Date())
@@ -28,6 +28,8 @@ const DateModal = (props) => {
    let firstDayNextWeek =  add(firstDayCurrentWeek, {days: 7})
    setCurrentWeek(format(firstDayNextWeek, 'dd-MM'))
    }
+   
+   console.log(newDays)
 
    const previousWeek = () => {
     let firstDayNextWeek =  add(firstDayCurrentWeek, {days: -7})
