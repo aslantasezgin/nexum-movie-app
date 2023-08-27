@@ -48,7 +48,7 @@ const DateModal = (props) => {
     const deleteWatchList = (dwl) => {
         const newWatchList = watchList.filter((wl) => wl.imdbID !== dwl)
         dispatch(setWatchList(newWatchList))
-        toast.success(movie.Title + " " + "seçtiğiniz tarihten kaldırılmıştır.")
+        toast.success("Film seçtiğiniz tarihten kaldırılmıştır.")
     }
 
 
