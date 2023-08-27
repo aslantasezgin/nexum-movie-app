@@ -1,0 +1,127 @@
+.days{
+    display: flex;
+    width: 90%;
+    margin: 0px auto;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    top: -20px;
+    padding-left: 0px;
+}
+
+.date-control{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.date-control .date{
+    position: relative;
+    top:44px;
+    cursor: pointer;
+    color: #DC3545;
+    font-size: 25px;
+}
+
+.date-control .next.date{
+    left: -5px;
+}
+
+.day-box.selected{
+    background-color: #DC3545;
+}
+
+.day-box{
+    display: inline-block;
+    background-color: rgb(48, 121, 229);
+    color: #fff;
+    width: 13%;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0px 4px;
+}
+
+.day-box span{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.day-day{
+    font-weight: 700;
+    font-size: 16px;
+    padding: 4px 0px;
+
+}
+
+.day-year{
+    font-weight: 300;
+    font-size: 15px;
+
+}
+
+.day-month{
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.watch-list{
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 30px;
+}
+
+.watch-list table{
+    width: 100%;
+}
+
+.watch-list table img{
+    height: 70px;
+    object-fit: contain;
+}
+
+.watch-list table td{
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+.delete-movie{
+    background-color: #DC3545;
+    color: #fff;
+    padding:8px 10px ;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.delete-movie:hover{
+    background-color: red;
+}
+
+.delete-movie svg{
+    position: relative;
+    top: -1px;
+}
+
+@media(max-width:600px){
+    .day-box {
+      padding: 2px;
+        width: 11%;
+    
+    }
+}
+
+@media(min-width:601px) and (max-width:928px){
+    .day-box {
+        display: inline-block;
+        background-color: rgb(48, 121, 229);
+        color: #fff;
+        width: 12%;
+        padding: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 0px 4px;
+    }
+  }

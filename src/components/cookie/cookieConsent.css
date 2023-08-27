@@ -1,0 +1,10 @@
+.cookie-consent{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #0000005b;
+    color: #fff;
+}

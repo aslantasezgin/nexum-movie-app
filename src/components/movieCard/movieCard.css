@@ -1,0 +1,141 @@
+
+.movie-card{
+    width: 49%;
+    margin: 0px 4px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 30px;
+    
+}
+
+
+
+.movie-img{
+    width: 40%;
+    position: relative;
+    height: 250px;
+}
+
+.favorite-icon{
+    position: absolute;
+    z-index: 200;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+
+.movie-card:hover .watch-later{
+    bottom: 0px;
+}
+
+.watch-later{
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    transition: all 0.2s;
+    display: block;
+    background-color: #DC3545;
+    color: #fff;
+    bottom: -200px;
+    left: 0px;
+    padding:10px 0px;
+    text-align: center;
+}
+
+.watch-later svg{
+    position: relative;
+    top: -1px;
+    left: -1px;
+}
+
+.movie-card:hover img{
+    filter: brightness(60%);
+}
+
+.movie-img img{
+    width: 100%;
+    transition: all 0.2s;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.movie-text{
+    width: 60%;
+    padding-left: 10px;
+}
+
+.movie-text h2{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.imdb-point{
+    color: #DC3545;
+    display: block;
+    padding-bottom: 6px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.imdb-point svg{
+    position: relative;
+    top: -3px;
+}
+
+.lang{
+    width: 100%;
+    display: block;
+
+}
+
+.crew{
+    width: 100%;
+    display: block;
+}
+
+.description{
+    font-size: 14px;
+}
+
+@media(max-width:600px){
+    .movie-card{
+        flex-wrap: wrap;
+    }
+
+    .movie-img {
+        width: 100%;
+        position: relative;
+        height: 300px;
+    }
+
+    .movie-img img{
+        object-fit: contain;
+    }
+
+    .movie-text {
+        padding-top: 20px;
+        width: 100%;
+        padding-left: 0px;
+        text-align: left;
+    }
+
+    .watch-later {
+        cursor: pointer;
+        position: absolute;
+        width: auto;
+        margin: 0px auto;
+        transition: all 0.2s;
+        display: inline-block;
+        background-color: #DC3545;
+        color: #fff;
+        bottom: 0px;
+        left: 0px;
+        padding: 10px 20px;
+        text-align: center;
+    }
+}
