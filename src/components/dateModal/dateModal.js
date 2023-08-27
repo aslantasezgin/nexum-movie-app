@@ -17,8 +17,8 @@ const DateModal = (props) => {
     let today = startOfToday()
 
     let [selectedDay, setSelectedDay] = useState(today)
-    let [currentWeek, setCurrentWeek] = useState(format(today, 'dd-MM'))
-    let firstDayCurrentWeek = parse(currentWeek, 'dd-MM', new Date())
+    let [currentWeek, setCurrentWeek] = useState(format(today, 'dd-MM-yyyy'))
+    let firstDayCurrentWeek = parse(currentWeek, 'dd-MM-yyyy', new Date())
 
    let newDays =  eachDayOfInterval({
     start:firstDayCurrentWeek,
@@ -26,13 +26,12 @@ const DateModal = (props) => {
 
    const nextWeek = () => {
    let firstDayNextWeek =  add(firstDayCurrentWeek, {days: 7})
-   setCurrentWeek(format(firstDayNextWeek, 'dd-MM'))
+   setCurrentWeek(format(firstDayNextWeek, 'dd-MM-yyyy'))
    }
    
-
    const previousWeek = () => {
     let firstDayNextWeek =  add(firstDayCurrentWeek, {days: -7})
-    setCurrentWeek(format(firstDayNextWeek, 'dd-MM'))
+    setCurrentWeek(format(firstDayNextWeek, 'dd-MM-yyyy'))
     }
 
     const addWatchList = () => {
