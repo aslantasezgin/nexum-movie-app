@@ -50,7 +50,7 @@ const Movies = () => {
     return(
      <div className="movies">
     <div className="movies-title">
-    <h1>{searchValue} için Sonuçlar </h1>
+    <h1>{searchValue} İçin Sonuçlar </h1>
     <span>{resultCount} Sonuç Bulundu</span>
     </div>
 
