@@ -20,9 +20,10 @@ const DateModal = (props) => {
     let [currentWeek, setCurrentWeek] = useState(format(today, 'dd-MM-yyyy'))
     let firstDayCurrentWeek = parse(currentWeek, 'dd-MM-yyyy', new Date())
 
-   let newDays =  eachDayOfInterval({
-    start:firstDayCurrentWeek,
-    end:endOfWeek(firstDayCurrentWeek)})
+    const newDays = [];
+    for (let i = 0; i < 7; i++) {
+      newDays.push(add(firstDayCurrentWeek, { days: i }));
+    }
 
    const nextWeek = () => {
    let firstDayNextWeek =  add(firstDayCurrentWeek, {days: 7})
